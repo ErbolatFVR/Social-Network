@@ -1,0 +1,14 @@
+.item {
+  color:green;
+}
+.content {
+  margin:10px 0 0 10px;
+  padding: 1em;
+  grid-area: c;
+  background-color:brown;
+  color:#fff;
+}
+.posts{
+
+}
+
