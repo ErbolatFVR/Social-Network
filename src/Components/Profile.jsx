@@ -1,7 +1,7 @@
 import React from 'react';
-
+import css from './Profile.module.css'
 const Profile = () => {
-    return <div className='content'>
+  return <div className={css.content}>
     <div>
 
     </div>
