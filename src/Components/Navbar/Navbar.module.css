@@ -1,14 +1,16 @@
-
-.nav {
-    margin-top: 10px;
-    padding: 1em;
-    grid-area: n;
-    background-color:green;
-}
 .item{
     color: white;
-}
 
-.item.active{
-    color: gold;
+}
+.item a {
+    color: white;
+    text-decoration: none;
+}
+.item a:hover {
+    color: red;
+
+}
+.item a.active{
+    color: darkgray;
+
 }
