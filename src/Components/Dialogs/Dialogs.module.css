@@ -1,10 +1,12 @@
 .dialogs {
-display: grid;
+    display: grid;
     grid-template-columns: 1fr 5fr;
 }
+
 .dialogsItem {
 
 }
+
 .dialogsItem .active {
     color: green;
 }
