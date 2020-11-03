@@ -14,7 +14,9 @@ const App = () => {
     return (
         <BrowserRouter>
             <div className='app-wrapper'>
-                <Header/>
+
+                    <Header/>
+
                 <div className="nav">
                     <Nav/>
                 </div>

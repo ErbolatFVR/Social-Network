@@ -1,4 +1,7 @@
 .item{
+    font-family: ;
+    font-size: 24px;
+    font-weight:bold;
     color: white;
 
 }
@@ -11,6 +14,7 @@
 
 }
 .item a.active{
-    color: darkgray;
+    color: black;
+
 
 }

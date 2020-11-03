@@ -8,23 +8,23 @@
     grid-template-columns: 1fr 5fr;
 
 }
+
 .nav {
+    border-radius: 1em;
     margin-top: 5px;
     padding: 1em;
     grid-area: n;
-    background-color: green;
+    background-color: #999999;
 }
 
 .content {
     margin:5px 0 0 5px;
-    padding: 1em;
+    padding:1em;
     grid-area: c;
-    background-color:brown;
-    color:#fff;
+    background-color:navajowhite;
+    color: 000;
+    border-radius: 1em;
 }
-
-
-
 
 
 

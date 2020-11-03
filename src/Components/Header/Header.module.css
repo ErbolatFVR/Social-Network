@@ -2,6 +2,7 @@
     padding: 0.5em;
     grid-area: h;
     background-color: darkblue;
+    border-radius: 1em;
 }
 .header img {
     width: 60px;

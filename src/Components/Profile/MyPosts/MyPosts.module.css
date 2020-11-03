@@ -1,14 +1,21 @@
 .item {
   color:green;
+  border-radius: 1em;
+  background-color: #fff;
 }
 .content {
-  margin:10px 0 0 10px;
-  padding: 1em;
   grid-area: c;
-  background-color:brown;
-  color:#fff;
-}
-.posts{
-
+  background-color:inherit;
+  color:black;
 }
 
+
+.textarea {
+ resize: none;
+  border-radius:5px;
+  font-size: 1.5em; /* Размер надписи */
+  font-family: "sans-serif";
+  text-indent: 5px;
+
+
+}

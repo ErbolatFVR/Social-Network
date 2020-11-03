@@ -5,12 +5,13 @@ import Post from './Post/Post'
 const MyPosts = () => {
     return (
         <div className={css.content}>
-
             <div>
-                <img src="https://лада.онлайн/uploads/posts/2016-01/1452856264_logo.jpg"></img>
+                <textarea  className={css.textarea} cols="80" rows="5"></textarea>
             </div>
-            <textarea></textarea>
-            <button>Add Post</button>
+            <div>
+                <button >Add Post</button>
+            </div>
+            
             <div>
 
                 <Post message="Hi, How are you?" like="2"/>
