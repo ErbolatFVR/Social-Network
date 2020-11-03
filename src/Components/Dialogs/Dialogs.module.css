@@ -1,13 +1,15 @@
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 5fr;
+
 }
 
 .dialogsItem {
+    font-weight: 700;
 
 }
 
-.dialogsItem .active {
+.dialogsItem.active {
     color: green;
 }
 
@@ -20,7 +22,10 @@
 }
 
 .message {
-
+    margin-bottom: 2px;
+    border-radius: 2px;
+    font-weight: 500;
+    background-color: #fff;
 }
 
 

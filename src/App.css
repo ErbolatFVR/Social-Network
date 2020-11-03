@@ -14,14 +14,14 @@
     margin-top: 5px;
     padding: 1em;
     grid-area: n;
-    background-color: #999999;
+    background-color: #eeeeee;
 }
 
 .content {
     margin:5px 0 0 5px;
     padding:1em;
     grid-area: c;
-    background-color:navajowhite;
+    background-color: #eeeeee;
     color: 000;
     border-radius: 1em;
 }

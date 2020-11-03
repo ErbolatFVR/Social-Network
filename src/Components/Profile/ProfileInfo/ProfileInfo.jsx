@@ -8,7 +8,7 @@ const ProfileInfo = () => {
                 <img className={css.profileImg} src="https://лада.онлайн/uploads/posts/2016-01/1452856264_logo.jpg"></img>
             </div>
             <div className={css.descriptionStyle} >
-                ava + description
+                Ava + Description
             </div>
         </div>
     )
