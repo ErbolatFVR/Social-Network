@@ -28,10 +28,10 @@ const Dialogs = () => {
 
     let messageData = [
         {id:1, message:'Hi'},
-        {id:1, message:'How are you?'},
-        {id:1, message:'I am fine'},
-        {id:1, message:'Let\'s go play'},
-        {id:1, message:'Blablaalabalabl'}
+        {id:2, message:'How are you?'},
+        {id:3, message:'I am fine'},
+        {id:4, message:'Let\'s go play'},
+        {id:5, message:'Blablaalabalabl'}
     ]
     return (
         <div className={css.dialogs}>
@@ -50,6 +50,7 @@ const Dialogs = () => {
                 <Message message={messageData[1].message} />
                 <Message message={messageData[2].message} />
                 <Message message={messageData[3].message} />
+                <Message message={messageData[4].message} />
             </div>
         </div>
     )
