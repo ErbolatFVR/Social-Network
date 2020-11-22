@@ -9,7 +9,7 @@ const MyPosts = (props) => {
 
         <div className={css.content}>
             <div>
-                <textarea  className={css.textarea} cols="80" rows="5"></textarea>
+                <textarea  className={css.textarea} ></textarea>
             </div>
 
             <div>
