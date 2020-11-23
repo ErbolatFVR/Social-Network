@@ -7,14 +7,16 @@ import state from './redux/state';
 import {addPost} from './redux/state';
 import {BrowserRouter} from "react-router-dom";
 
-
-ReactDOM.render(
-    <BrowserRouter>
-        <React.StrictMode>
-            <App state={state} addPost={addPost}/>
-        </React.StrictMode>
-    </BrowserRouter>
-    , document.getElementById('root')
-);
+let rerenderEntireTree = () => {
+    ReactDOM.render(
+        <BrowserRouter>
+            <React.StrictMode>
+                <App state={state} addPost={addPost}/>
+            </React.StrictMode>
+        </BrowserRouter>
+        , document.getElementById('root')
+    );
+}
+rerenderEntireTree();
 
 serviceWorker.unregister();

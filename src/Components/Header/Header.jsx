@@ -1,10 +1,9 @@
 import React from 'react';
-import css from './Header.module.css';
 
 const Header = () => {
-    return <header className={css.header}>
+    return <header>
         <img
-            src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/471px-Google_%22G%22_Logo.svg.png'>
+            src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/471px-Google_%22G%22_Logo.svg.png' alt="Header IMG">
         </img>
     </header>
 }

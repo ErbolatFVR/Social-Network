@@ -1,3 +1,6 @@
+body{
+    background-color: #fff;
+}
 .app-wrapper {
     display: grid;
     margin: 0 auto;
@@ -8,22 +11,33 @@
     grid-template-columns: 5fr 20fr;
 
 }
+.header {
+    padding: 0.5em;
+    grid-area: h;
+    background-color: #3b5998;
+    border-radius: .5em;
+
+}
+.header img {
+    width: 60px;
+
+}
 
 .nav {
-    border-radius: 1em;
+    border-radius: .5em;
     margin-top: 5px;
     padding: 1em;
     grid-area: n;
-    background-color: #eeeeee;
+    background-color: 	#f7f7f7;
 }
 
 .content {
     margin:5px 0 0 5px;
     padding:1em;
     grid-area: c;
-    background-color: #eeeeee;
+    background-color: 	#f7f7f7;
     color: 000;
-    border-radius: 1em;
+    border-radius: .5em;
 }
 
 
