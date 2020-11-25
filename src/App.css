@@ -7,8 +7,8 @@ body{
     max-width: 1400px;
 
     grid-template-areas: "h h" "n c";
-    grid-template-rows: 1fr 20fr;
-    grid-template-columns: 5fr 20fr;
+    grid-template-rows: 4.8em 4fr;
+    grid-template-columns: 1fr 4fr;
 
 }
 .header {

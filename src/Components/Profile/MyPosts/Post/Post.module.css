@@ -2,13 +2,30 @@
   color: black;
   font-size: 1.2em;
   font-weight: 700;
+  text-align: center;
+  display: flex;
+  margin: 10px;
+
+}
+.content{
+
 }
 
-.content img{
-
+.content img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  
 }
 
+.message {
+  padding-left: 1em;
+  display: flex;
+  align-items: center
+}
+.like{
+
+  margin:0 0 -3em;
+  display: flex;
+  align-items: center;
+
+}
