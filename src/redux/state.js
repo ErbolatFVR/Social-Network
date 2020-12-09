@@ -1,5 +1,7 @@
-import {rerenderEntireTree} from "../render";
-
+let rerenderEntireTree = () => {
+    console.log('State changed')
+}
+// Временная хранилище данных
 let state = {
     profilePage: {
         posts: [
@@ -7,7 +9,7 @@ let state = {
             {id: 2, likesCount: 26, post: 'It\'s my first post'},
             {id: 3, likesCount: 28, post: 'Look at this'},
         ],
-        newPostText: 'what is this'
+        newPostText: 'ffffffff'
     },
     dialogsPage: {
         dialogs: [
@@ -27,19 +29,26 @@ let state = {
         ]
     }
 }
-
-export let addPost = () => {
+// Отправляет данные новых постов в хранилище
+export const addPost = () => {
     let newPost = {
         id: 5,
-        likesCount: 0,
+        likesCount: 10,
         post: state.profilePage.newPostText
     }
-
+    // Отправляет данные из Textarea на хранилище
     state.profilePage.posts.push(newPost)
     rerenderEntireTree(state);
 }
-export let updateNewPostText = (newText) => {
+//
+//Обновляет данные newPostText
+export const updateNewPostText = (newText) => {
     state.profilePage.newPostText = newText;
     rerenderEntireTree(state);
+}
+
+//...
+export const subscribe = (observer) => {
+         rerenderEntireTree = observer
 }
 export default state;
