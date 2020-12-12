@@ -13,23 +13,26 @@ const MyPosts = (props) => {
 
     //вызывает функцию для добавления поста в профиль
     let addPost = () => {
-        props.addPost();
-        props.updateNewPostText('');
+
+        //props.addPost();
+        props.dispatch({type: 'ADD-POST'})
     }
 
     //Данные в Textarea отправляется в State чтобы обновить данные
     let onPostChange = () => {
         let currentText = textArea.current.value;
-        props.updateNewPostText(currentText);
-    }
+        //props.updateNewPostText(currentText);
+        let action = {type: 'UPDATE-NEW-POST-TEXT', newText: currentText};
+        props.dispatch(action)
+        }
     //Возвращает посты
     return (
-        <div className={css.content}>
-            <div> <textarea onChange={onPostChange}
-                          ref={textArea}
-                          value={props.newPostText} /></div>
-            <div> <button onClick={ addPost }>Add Post</button></div>
-            <div> {PostsElements} </div>
+        <div className={ css.content }>
+            <div> <textarea onChange={ onPostChange }
+                          ref     = { textArea}
+                          value   = { props.newPostText } /></div>
+            <div> <button onClick = { addPost }> Add Post </button></div>
+            <div> { PostsElements } </div>
         </div>
     )
 }

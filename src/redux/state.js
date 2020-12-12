@@ -11,11 +11,11 @@ let store ={
         },
         dialogsPage: {
             dialogs: [
-                {id: 3, name: 'Akerke', surname: 'Mukhamadieva'},
-                {id: 4, name: 'Yebol', surname: 'Satybaldyn'},
-                {id: 1, name: 'Erbolat', surname: 'Erkinbek'},
-                {id: 5, name: 'Agzambek', surname: 'Kairat'},
-                {id: 2, name: 'Yersyl', surname: 'Kerimbek'},
+                {id: 1, name: 'Akerke', surname: 'Mukhamadieva'},
+                {id: 2, name: 'Yebol', surname: 'Satybaldyn'},
+                {id: 3, name: 'Erbolat', surname: 'Erkinbek'},
+                {id: 4, name: 'Agzambek', surname: 'Kairat'},
+                {id: 5, name: 'Yersyl', surname: 'Kerimbek'},
                 {id: 6, name: 'Axmet', surname: 'Ermekov'}
             ],
             messages: [
@@ -35,28 +35,27 @@ let store ={
     _callSubscriber ()  {
         console.log('State changed')},
 
-    // Отправляет данные новых постов в хранилище
-    addPost: function () {
-        let newPost = {
-            id: 5,
-            likesCount: 10,
-            post: this._state.profilePage.newPostText,
-        }
-
-        // Отправляет данные из Textarea на хранилище
-        this._state.profilePage.posts.push(newPost);
-        this._callSubscriber(this._state);
-    },
-
-    //Обновляет данные newPostText
-    updateNewPostText (newText)  {
-        this._state.profilePage.newPostText = newText;
-        this._callSubscriber(this._state);
-    },
-
     subscribe (observer)  {
         this._callSubscriber = observer
     },
+
+    dispatch (action) {
+        if (action.type === 'ADD-POST' ) {
+            let newPost = {
+                id: 5,
+                likesCount: 9999,
+                post: this._state.profilePage.newPostText,
+            }
+
+            this._state.profilePage.posts.push(newPost);
+            this._state.profilePage.newPostText = '';
+            this._callSubscriber(this._state);
+        }
+        else if (action.type === 'UPDATE-NEW-POST-TEXT') { //Обновляет данные newPostText
+            this._state.profilePage.newPostText = action.newText;
+            this._callSubscriber(this._state);
+        }
+    }
 
 
 }
