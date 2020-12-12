@@ -14,7 +14,7 @@ body{
 .header {
     padding: 0.5em;
     grid-area: h;
-    background-color: #3b5998;
+    background: linear-gradient(.1turn, #3b5998, #e66465, #6cf542);
     border-radius: .5em;
 
 }
@@ -29,6 +29,7 @@ body{
     padding: 1em;
     grid-area: n;
     background-color: 	#f7f7f7;
+
 }
 
 .content {

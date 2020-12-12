@@ -8,7 +8,7 @@ const MyPosts = (props) => {
     let PostsElements = props.posts.map
         ( p => <Post message={p.post} like={p.likesCount} />);
 
-    //textarea обьявлена как переменная
+    //textarea обьявлена как переменнаяs
     let textArea = React.createRef();
 
     //вызывает функцию для добавления поста в профиль
