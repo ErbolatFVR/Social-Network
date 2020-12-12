@@ -1,5 +1,5 @@
 import React from 'react';
-import css from './Post.module.css'
+import css   from './Post.module.css'
 
 const Post = (props) => {
   return (

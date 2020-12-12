@@ -1,5 +1,5 @@
-import React from 'react';
-import MyPosts from './../Profile/MyPosts/MyPosts'
+import React       from 'react';
+import MyPosts     from './../Profile/MyPosts/MyPosts'
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 
